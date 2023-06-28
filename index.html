@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CAN Bus Load Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div class="container">
+        <h1>CAN BUS LOAD CALCULATOR</h1>
+        <div class="input-group">
+            <label for="baudRate">Baud Rate (bps)</label>
+            <input type="number" id="baudRate" placeholder="Enter baud rate" required>
+        </div>
+        <div class="input-group">
+            <label for="duration">Duration (seconds)</label>
+            <input type="number" id="duration" placeholder="Enter duration" required>
+        </div>
+        <div class="input-group">
+            <label for="numMessages">Number of Messages</label>
+            <input type="number" id="numMessages" placeholder="Enter number of messages" required>
+        </div>
+        <div id="messageIdInputs"></div>
+        <button class="btn" onclick="calculateBusLoad()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
